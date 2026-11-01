@@ -524,64 +524,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.node.dummyrtb",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.dummyrtb.so",
-            ],
-            shared_libs: [
-                "libcamera_metadata",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.node.dummysat",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.dummysat.so",
-            ],
-            shared_libs: [
-                "libcamera_metadata",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.node.eisv2",
     owner: "motorola",
     strip: {
@@ -733,37 +675,6 @@ cc_prebuilt_library_shared {
                 "libcamera_metadata",
                 "libchilog",
                 "libcom.qti.chinodeutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.node.remosaic",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.remosaic.so",
-            ],
-            shared_libs: [
-                "libcamera_metadata",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libfcell",
-                "libcutils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -1559,75 +1470,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.vidhance.node.processing",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.vidhance.node.processing.so",
-            ],
-            shared_libs: [
-                "libcamera_metadata",
-                "libcom.qti.chinodeutils",
-                "libvidhance",
-                "libutils",
-                "libcutils",
-                "libui-v34",
-                "libhidlbase",
-                "libhidltransport",
-                "android.frameworks.sensorservice@1.0",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.vidhance.stats.aec_dmbr",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libofflinelog",
-                "liblog",
-                "libsync",
-                "libhidlbase",
-                "libhidltransport",
-                "android.frameworks.sensorservice@1.0",
-                "libvidhance",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.fingerprints.extension@1.0",
     owner: "motorola",
     strip: {
@@ -1927,45 +1769,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.feature2.hdr",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/com.qti.feature2.hdr.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libofflinelog",
-                "libsync",
-                "com.qti.chi.override",
-                "com.qti.feature2.gs",
-                "libcamera_metadata",
-                "libchilog",
-                "libhardware",
-                "libhidlbase",
-                "libqdMetaData",
-                "libutils",
-                "vendor.qti.hardware.vpp@1.1",
-                "vendor.qti.hardware.vpp@1.2",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.feature2.memcpy",
     owner: "motorola",
     strip: {
@@ -2014,84 +1817,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/com.qti.feature2.mfsr.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libofflinelog",
-                "libsync",
-                "com.qti.chi.override",
-                "com.qti.feature2.gs",
-                "libcamera_metadata",
-                "libchilog",
-                "libhardware",
-                "libhidlbase",
-                "libqdMetaData",
-                "libutils",
-                "vendor.qti.hardware.vpp@1.1",
-                "vendor.qti.hardware.vpp@1.2",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.feature2.qcfa",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/com.qti.feature2.qcfa.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libofflinelog",
-                "libsync",
-                "com.qti.chi.override",
-                "com.qti.feature2.gs",
-                "libcamera_metadata",
-                "libchilog",
-                "libhardware",
-                "libhidlbase",
-                "libqdMetaData",
-                "libutils",
-                "vendor.qti.hardware.vpp@1.1",
-                "vendor.qti.hardware.vpp@1.2",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.feature2.rawhdr",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/com.qti.feature2.rawhdr.so",
             ],
             shared_libs: [
                 "libc++",
@@ -2876,28 +2601,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libfcell",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libfcell.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libgf_ca",
     owner: "motorola",
     strip: {
@@ -3221,6 +2924,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmmcamera_mfnr_t4",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmmcamera_mfnr_t4.so",
+            ],
+            shared_libs: [
+                "libopencv",
+                "liblog",
+                "libz",
+                "libdl",
+                "libc++",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmot_afd",
     owner: "motorola",
     strip: {
@@ -3414,35 +3144,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvidhance",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvidhance.so",
-            ],
-            shared_libs: [
-                "libcomparetf2_shim",
-                "libGLESv3",
-                "libEGL",
-                "libGLESv2",
-                "libdl",
-                "libm",
-                "liblog",
-                "libc++",
-                "libc",
             ],
         },
     },
